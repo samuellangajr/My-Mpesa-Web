@@ -73,7 +73,7 @@ const Header: React.FC = () => {
                 className={`fixed left-0 h-full w-64 bg-mpesa transform ${
                     menuOpen ? "translate-x-0" : "-translate-x-full"
                 } transition-transform duration-300 ease-in-out md:hidden`}
-                style={{ top: "72px" }}
+                style={{ top: "72px", zIndex: 1000  }}
             >
                 <div className="px-4 py-8">
                     <Link
