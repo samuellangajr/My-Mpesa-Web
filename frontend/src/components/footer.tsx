@@ -25,13 +25,13 @@ const Footer: React.FC = () => {
                 <p className=" text-gray-500">
                     &copy; 2013-2024, M-pesa. All rights Reserved.
                 </p>
-                <Link href={"/"} style={{ color: "#0c0c0d" }}>
+                <Link href={"/"} className="hover:underline" style={{ color: "#0c0c0d" }}>
                     Privacy
                 </Link>
-                <Link href={"/"} style={{ color: "#0c0c0d" }}>
+                <Link href={"/"} className="hover:underline" style={{ color: "#0c0c0d" }}>
                     Cookies
                 </Link>
-                <Link href={"/"} style={{ color: "#0c0c0d" }}>
+                <Link href={"/"} className="hover:underline" style={{ color: "#0c0c0d" }}>
                     Legal
                 </Link>
             </div>
