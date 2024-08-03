@@ -1,5 +1,8 @@
+import "./globals.css";
 import { Poppins, Lato } from "next/font/google";
 import { Suspense } from "react";
+import Header from "@components/header";
+import Footer from "@components/footer";
 const poppins = Poppins({
     subsets: ["latin"],
     display: "swap",
@@ -23,7 +26,9 @@ export default function RootLayout({
                 className={`${lato.variable} ${poppins.variable} font-primary text-black`}
             >
                 <Suspense>
-                   
+                   <Header/>
+                    {children}
+                    <Footer/>
                 </Suspense>
             </body>
         </html>
