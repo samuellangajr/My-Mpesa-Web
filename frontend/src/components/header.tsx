@@ -24,8 +24,8 @@ const Header: React.FC = () => {
                         <Image
                             src={logo}
                             alt="Mpesa Logo"
-                            width={70}
-                            height={70}
+                            width={60}
+                            height={60}
                         />
                     </Link>
                 </div>
@@ -60,8 +60,8 @@ const Header: React.FC = () => {
                     size={22}
                 />
                 <div>
-                    <Link href="/" className="space-x-2 flex items-center">
-                        <span className="w-10 h-10 rounded-full bg-white text-mpesa flex items-center justify-center">
+                    <Link href="/" className="flex items-center p-2 space-x-2  border border-red-500 rounded-full  hover:bg-red-500">
+                        <span className="flex items-center justify-center w-10 h-10 rounded-full bg-white text-mpesa ">
                             SJ
                         </span>
                         <span className="text-white">Hello, Samuel</span>
