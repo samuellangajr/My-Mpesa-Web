@@ -1,2 +1,2 @@
-# My-Mpesa-Web
-Web version of My-Mpesa app
+# Preview
+https://my-mpesa-web.vercel.app/
