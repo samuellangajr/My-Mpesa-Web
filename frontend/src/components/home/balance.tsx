@@ -10,7 +10,7 @@ const Balance: React.FC = () => {
         setShowBalance(!showBalance);
     };
     return (
-        <div className="row-span-5 bg-white p-6 rounded-xl border space-y-4">
+        <div className="row-span-4 bg-white p-6 rounded-xl border space-y-4">
             <div className="flex justify-between items-center">
                 <h1
                     className="hover:underline font-bold text-lg"
