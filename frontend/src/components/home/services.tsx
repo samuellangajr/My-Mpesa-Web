@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import dstv from "@images/services/dstv.png";
 import gotv from "@images/services/gotv.png";
 import tvcabo from "@images/services/tvcabo.png";
@@ -14,42 +15,52 @@ const services = [
     {
         name: "DSTV",
         image: dstv,
+        url: "/",
     },
     {
         name: "GOTV",
         image: gotv,
+        url: "/",
     },
     {
         name: "TVCabo",
         image: tvcabo,
+        url: "/",
     },
     {
         name: "Startimes",
         image: startimes,
+        url: "/",
     },
     {
         name: "ZAP",
         image: zap,
+        url: "/",
     },
     {
         name: "Txuna",
         image: txuna,
+        url: "/",
     },
     {
         name: "Xitique",
         image: xitique,
+        url: "/",
     },
     {
         name: "TMT",
         image: tmt,
+        url: "/",
     },
     {
         name: "ISPG",
         image: ispg,
+        url: "/",
     },
     {
         name: "EDM",
         image: edm,
+        url: "/",
     },
 
 ];
@@ -65,9 +76,10 @@ const Services: React.FC = () => {
             </h1>
             <div className="grid grid-cols-3 md:grid-cols-4 gap-5 mt-6 ">
                 {services.map((service, index) => (
-                    <div
+                    <Link
                         key={index}
                         className="flex flex-col items-center cursor-pointer transition-transform duration-300 hover:scale-110"
+                        href={service.url}
                     >
                         <div className="flex items-center justify-center w-12 h-12 rounded-full text-white border ">
                             <Image
@@ -78,7 +90,7 @@ const Services: React.FC = () => {
                             />
                         </div>
                         <span className="text-xs">{service.name}</span>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>
