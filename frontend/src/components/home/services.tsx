@@ -63,7 +63,7 @@ const Services: React.FC = () => {
             >
                 Services
             </h1>
-            <div className="grid grid-cols-4 gap-5 mt-6 ">
+            <div className="grid grid-cols-3 md:grid-cols-4 gap-5 mt-6 ">
                 {services.map((service, index) => (
                     <div
                         key={index}

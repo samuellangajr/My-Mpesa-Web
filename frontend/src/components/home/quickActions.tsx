@@ -30,9 +30,9 @@ const quickActions = [
 
 const QuickActions: React.FC = () => {
     return (
-        <div className="row-span-4 bg-white p-6 rounded-xl border">
+        <div className=" bg-white p-6 rounded-xl border">
             {/* Send money, Credelec, and Cashout */}
-            <div className="flex items-center justify-center space-x-6">
+            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
                 {quickActions.map((action, index) => (
                     <div
                         key={index}

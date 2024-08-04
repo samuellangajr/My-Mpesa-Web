@@ -10,7 +10,7 @@ const Balance: React.FC = () => {
         setShowBalance(!showBalance);
     };
     return (
-        <div className="row-span-4 bg-white p-6 rounded-xl border space-y-4">
+        <div className="bg-white p-6 rounded-xl border space-y-4">
             <div className="flex justify-between items-center">
                 <h1
                     className="hover:underline font-bold text-lg cursor-pointer"
@@ -29,6 +29,7 @@ const Balance: React.FC = () => {
             >
                 10,000.00 Mzn
             </p>
+            <p className="text-sm text-gray-600">Available</p>
             <div
                 className="flex items-center justify-center w-32 space-x-2 p-2 rounded-full bg-mpesa text-white cursor-pointer"
                 onClick={toogleShowBalance}
