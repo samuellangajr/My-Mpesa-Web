@@ -4,7 +4,7 @@ import { BiShow } from "react-icons/bi";
 import MoreOptions from "./moreOptions";
 
 const Balance: React.FC = () => {
-    const [showBalance, setShowBalance] = useState(true);
+    const [showBalance, setShowBalance] = useState(false);
 
     const toogleShowBalance = () => {
         setShowBalance(!showBalance);
