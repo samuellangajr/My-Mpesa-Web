@@ -13,7 +13,7 @@ const Balance: React.FC = () => {
         <div className="row-span-4 bg-white p-6 rounded-xl border space-y-4">
             <div className="flex justify-between items-center">
                 <h1
-                    className="hover:underline font-bold text-lg"
+                    className="hover:underline font-bold text-lg cursor-pointer"
                     style={{ color: "#0c0c0d" }}
                 >
                     M-pesa account
