@@ -1,5 +1,5 @@
 import SendMoney from "@/components/sendMoney/index";
-export default function MoveMoneyPage() {
+export default function SendMoneyPage() {
     return (
         <main>
             <SendMoney />
