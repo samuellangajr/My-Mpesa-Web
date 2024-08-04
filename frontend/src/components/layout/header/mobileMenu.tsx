@@ -6,7 +6,6 @@ interface MobileMenuProps {
 }
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ menuOpen }) => {
-    
     return (
         <div
             className={`fixed left-0 h-full w-64 bg-mpesa transform ${
@@ -17,19 +16,19 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ menuOpen }) => {
             <div className="px-4 py-8">
                 <Link
                     href="/"
-                    className="block text-white rounded-full bg-red-500 py-2 px-4 mb-2"
+                    className="block text-white rounded-full hover:bg-red-500 py-3 px-4"
                 >
                     Home
                 </Link>
                 <Link
-                    href="/"
-                    className="block text-white rounded-full hover:border border-red-500 py-2 px-4 mb-2"
+                    href="/move-money"
+                    className="block text-white rounded-full hover:bg-red-500 py-3 px-4"
                 >
                     Move money
                 </Link>
                 <Link
                     href="/"
-                    className="block text-white rounded-full hover:border border-red-500 py-2 px-4"
+                    className="block text-white rounded-full hover:bg-red-500 py-3 px-4"
                 >
                     Services
                 </Link>
