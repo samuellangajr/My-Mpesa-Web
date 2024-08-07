@@ -1,43 +1,36 @@
+import { CiBank } from "react-icons/ci";
 import Link from "next/link";
-import { RxPerson } from "react-icons/rx";
-import { GoPeople } from "react-icons/go";
-import { url } from "inspector";
-const sendMoney = [
+const bankTransfers = [
     {
-        name: "Send money",
-        icon: <RxPerson size={27} />,
-        url: "/send-money",
-    },
-    {
-        name: "Send money to many",
-        icon: <GoPeople size={27} />,
+        name: "Send money to bank",
+        icon: <CiBank  size={27} />,
         url: "/",
     },
 ];
-const SendMoney: React.FC = () => {
+const BankTransfers: React.FC = () => {
     return (
         <div>
             <h1
                 className="font-bold text-lg"
                 style={{ color: "#0c0c0d" }}
             >
-                Send Money
+                Bank transfers
             </h1>
             <div className="flex flex-wrap items-center gap-4 md:gap-6 mt-6">
-                {sendMoney.map((sendMoney, index) => (
+                {bankTransfers.map((bankTransfers, index) => (
                     <Link
                         key={index}
                         className="flex flex-col items-center cursor-pointer transition-transform duration-300 hover:scale-110"
-                        href={sendMoney.url}
+                        href={bankTransfers.url}
                     >
                         <div className="flex items-center justify-center w-12 h-12 rounded-full bg-red-200 text-mpesa">
-                            {sendMoney.icon}
+                            {bankTransfers.icon}
                         </div>
-                        <span className="text-sm">{sendMoney.name}</span>
+                        <span className="text-sm">{bankTransfers.name}</span>
                     </Link>
                 ))}
             </div>
         </div>
     );
 };
-export default SendMoney;
+export default BankTransfers;

@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import PhoneNumber from "./agentID";
-import Amount from "@components/sendMoney/amount";
+import Amount from "@/app/send-money/components/amount";
 import AgentID from "./agentID";
 
 const CashOut: React.FC = () => {

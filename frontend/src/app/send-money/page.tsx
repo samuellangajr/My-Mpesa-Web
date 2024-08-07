@@ -1,4 +1,4 @@
-import SendMoney from "@/components/sendMoney/index";
+import SendMoney from "./components/index";
 export default function SendMoneyPage() {
     return (
         <main>

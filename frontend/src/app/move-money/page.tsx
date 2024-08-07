@@ -1,4 +1,4 @@
-import MoveMoney from "@/components/moveMoney/index";
+import MoveMoney from "./components/index";
 export default function MoveMoneyPage() {
     return (
         <main>

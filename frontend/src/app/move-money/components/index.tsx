@@ -18,8 +18,8 @@ const MoveMoney: React.FC = () => {
                 <BankTransfers />
                 {/*Transactions*/}
                 <Transactions />
-                 {/*Request Money*/}
-                 <RequestMoney />
+                {/*Request Money*/}
+                <RequestMoney />
             </div>
         </div>
     );

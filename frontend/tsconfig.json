@@ -19,7 +19,6 @@
         ],
         "paths": {
             "@/*": ["./src/*"],
-            "@components/*": ["./src/components/*"],
             "@styles/*": ["./src/styles/*"],
             "@images/*": ["./public/images/*"]
         }
@@ -29,7 +28,7 @@
         "**/*.ts",
         "**/*.tsx",
         ".next/types/**/*.ts",
-        "src/components/cashOut/agentID.tsx"
+        "src/app/cash-out/components/agentID.tsx"
     ],
     "exclude": ["node_modules"]
 }
