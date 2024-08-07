@@ -2,7 +2,7 @@
 import React from "react";
 import AgentID from "./agentID";
 import Amount from "@components/fields/amount";
-import ContinueButton from "@/app/components/buttons/continueButton";
+import ContinueButton from "@components/buttons/continueButton";
 
 const CashOut: React.FC = () => {
     return (

@@ -1,21 +1,20 @@
-
 import React from "react";
 import Link from "next/link";
 
-interface Move {
+interface MoveMoney {
     name: string;
     icon: React.ReactNode;
     url: string;
 }
 
-interface MoveListProps {
+interface MoveMoneyListProps {
     title: string;
-    moves: Move[];
+    moves: MoveMoney[];
 }
 
-const MoveList: React.FC<MoveListProps> = ({ title, moves }) => {
+const MoveMoneySection: React.FC<MoveMoneyListProps> = ({ title, moves }) => {
     return (
-        <div>
+        <section>
             <h1 className="font-bold text-lg" style={{ color: "#0c0c0d" }}>
                 {title}
             </h1>
@@ -33,8 +32,8 @@ const MoveList: React.FC<MoveListProps> = ({ title, moves }) => {
                     </Link>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 
-export default MoveList;
+export default MoveMoneySection;

@@ -8,7 +8,7 @@ import { BsShop } from "react-icons/bs";
 import { PiBuildings } from "react-icons/pi";
 import { CiBank } from "react-icons/ci";
 
-export const moveData = [
+export const moveMoneyList = [
     {
         title: "Send Money",
         moves: [
