@@ -2,7 +2,8 @@
 import React from "react";
 import SelectWallet from "./selectWallet";
 import PhoneNumber from "./phoneNumber";
-import Amount from "./amount";
+import Amount from "@components/fields/amount"
+import ContinueButton from "@components/buttons/continueButton"
 
 const SendMoney: React.FC = () => {
     return (
@@ -20,14 +21,7 @@ const SendMoney: React.FC = () => {
                     {/* Amount */}
                     <Amount />
                     {/* Continue Button */}
-                    <div>
-                        <button
-                            type="submit"
-                            className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-mpesa focus:outline-none transition-transform duration-300 hover:scale-95"
-                        >
-                            Continue
-                        </button>
-                    </div>
+                    <ContinueButton />
                 </form>
             </div>
         </div>

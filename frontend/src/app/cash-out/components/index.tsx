@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
-import Amount from "@/app/send-money/components/amount";
 import AgentID from "./agentID";
+import Amount from "@components/fields/amount";
+import ContinueButton from "@/app/components/buttons/continueButton";
 
 const CashOut: React.FC = () => {
     return (
@@ -17,14 +18,7 @@ const CashOut: React.FC = () => {
                     {/* Amount */}
                     <Amount />
                     {/* Continue Button */}
-                    <div>
-                        <button
-                            type="submit"
-                            className="w-full py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-mpesa focus:outline-none transition-transform duration-300 hover:scale-95"
-                        >
-                            Continue
-                        </button>
-                    </div>
+                    <ContinueButton />
                 </form>
             </div>
         </div>
