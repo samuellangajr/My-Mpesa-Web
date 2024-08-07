@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@images/logo2.png";
+import { FaGithub } from "react-icons/fa";
+
 const Footer: React.FC = () => {
     return (
         <footer>
@@ -22,18 +24,27 @@ const Footer: React.FC = () => {
                 </Link>
             </div>
             <div className="flex flex-col md:flex-row items-center px-8 md:px-20 py-8 md:py-10 space-y-4 md:space-y-0 md:space-x-8 text-sm bg-white drop-shadow-sm">
-                <p className=" text-gray-500">
-                    &copy; 2013-2024, M-pesa. All rights Reserved.
-                </p>
-                <Link href={"/"} className="hover:underline" style={{ color: "#0c0c0d" }}>
-                    Privacy
-                </Link>
-                <Link href={"/"} className="hover:underline" style={{ color: "#0c0c0d" }}>
-                    Cookies
-                </Link>
-                <Link href={"/"} className="hover:underline" style={{ color: "#0c0c0d" }}>
-                    Legal
-                </Link>
+                <div className="flex space-x-2">
+                    <FaGithub size={20} />
+                    <Link
+                        href={"https://github.com/samuellangajr/My-Mpesa-Web"}
+                        className="hover:underline"
+                        style={{ color: "#0c0c0d" }}
+                    >
+                        GitHub repository
+                    </Link>
+                </div>
+                
+                <div className="flex space-x-2 text-gray-500">
+                    <span>Created by</span>
+                    <Link
+                        href={"https://www.linkedin.com/in/samuel-langa-92ab99287/"}
+                        className="hover:underline "
+                        style={{ color: "#0c0c0d" }}
+                    >
+                        Samuel Langa
+                    </Link>
+                </div>
             </div>
         </footer>
     );

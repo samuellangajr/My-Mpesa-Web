@@ -6,7 +6,7 @@ import Transactions from "./transactions";
 import RequestMoney from "./requestMoney";
 const MoveMoney: React.FC = () => {
     return (
-        <div className="pt-6 pb-10">
+        <div className="pb-10 pt-32">
             <div className="bg-white p-6 shadow-sm px-6 lg:px-20 space-y-6">
                 {/*Send Money*/}
                 <SendMoney />

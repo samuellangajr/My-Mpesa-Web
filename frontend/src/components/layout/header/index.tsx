@@ -16,7 +16,7 @@ const Header: React.FC = () => {
         setMenuOpen(!menuOpen);
     };
     return (
-        <header className="flex justify-between bg-mpesa py-3 px-6 md:px-14">
+        <header className="fixed w-full flex justify-between bg-mpesa py-3 px-6 md:px-14 z-50">
             <div className="flex items-center space-x-4">
                 <IoIosMenu
                     className="text-white cursor-pointer md:hidden"

@@ -4,7 +4,7 @@ import QuickActions from "./quickActions";
 import Services from "./services";
 const Home: React.FC = () => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-10 lg:px-36 py-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-10 lg:px-36 pb-10 pt-32">
             <div className="space-y-4">
                 {/*Balance*/}
                 <Balance />
