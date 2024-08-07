@@ -67,7 +67,7 @@ const services = [
 
 const Services: React.FC = () => {
     return (
-        <div className="row-span-12 bg-white p-6 rounded-xl border">
+        <section className="row-span-12 bg-white p-6 rounded-xl border">
             <h1
                 className="hover:underline font-bold text-lg cursor-pointer"
                 style={{ color: "#0c0c0d" }}
@@ -93,7 +93,7 @@ const Services: React.FC = () => {
                     </Link>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 export default Services;

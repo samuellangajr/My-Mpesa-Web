@@ -10,7 +10,7 @@ const Balance: React.FC = () => {
         setShowBalance(!showBalance);
     };
     return (
-        <div className="bg-white p-6 rounded-xl border space-y-4">
+        <section className="bg-white p-6 rounded-xl border space-y-4">
             <div className="flex justify-between items-center">
                 <h1
                     className="hover:underline font-bold text-lg cursor-pointer"
@@ -39,7 +39,7 @@ const Balance: React.FC = () => {
                     {showBalance ? "Hide balance" : "Show balance"}
                 </p>
             </div>
-        </div>
+        </section>
     );
 };
 export default Balance;

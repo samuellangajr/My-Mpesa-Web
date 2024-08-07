@@ -35,7 +35,7 @@ const quickActions = [
 
 const QuickActions: React.FC = () => {
     return (
-        <div className=" bg-white p-6 rounded-xl border">
+        <section className=" bg-white p-6 rounded-xl border">
             {/* Send money, Credelec, and Cashout */}
             <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
                 {quickActions.map((action, index) => (
@@ -59,7 +59,7 @@ const QuickActions: React.FC = () => {
                 </div>
                 <IoIosArrowForward size={27} />
             </div>
-        </div>
+        </section>
     );
 };
 
